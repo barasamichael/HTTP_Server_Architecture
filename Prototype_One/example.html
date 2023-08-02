@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DrugDistro Company - Solving Healthcare Distribution Challenges</title>
+		<link rel="stylesheet" href="styles_2.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	</head>
+	<body>
+		<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+header {
+	background-color: #f5f5f5;
+	padding: 10px 20px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav ul li {
+	margin-right: 10px;
+}
+
+#home {
+	background-color: #f9f9f9;
+	text-align: center;
+	padding: 100px 20px;
+}
+
+#home h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+#home h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #555;
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #555;
+}
+
+section {
+	padding: 80px 20px;
+}
+
+#about p,
+#solutions p,
+#clients p,
+#features-showcase p,
+#faq p,
+#pricing p,
+#contact p {
+	margin-bottom: 20px;
+	color: #555;
+}
+
+#solutions ul {
+	margin-top: 20px;
+	color: #555;
+}
+
+#clients .testimonial {
+	margin-bottom: 40px;
+	border-top: 2px solid #333;
+	padding-top: 30px;
+	color: #555;
+}
+
+#clients .testimonial p {
+	margin-bottom: 10px;
+}
+
+#clients .testimonial cite {
+	font-style: italic;
+	color: #777;
+}
+
+#features-showcase {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#features-showcase .feature-item {
+	width: 300px;
+	text-align: center;
+	margin: 20px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+#features-showcase .feature-item:hover {
+	transform: translateY(-5px);
+}
+
+#faq .faq-item {
+	margin-bottom: 30px;
+}
+
+#faq h3 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#pricing .pricing-table {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#pricing .package {
+	text-align: center;
+	margin: 0 20px;
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+#pricing .package:hover {
+	transform: translateY(-5px);
+}
+
+#pricing h3 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#pricing .price {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+#contact p {
+	margin-bottom: 10px;
+	color: #555;
+}
+
+footer {
+	background-color: #f5f5f5;
+	padding: 20px;
+	text-align: center;
+	color: #555;
+}
+
+#testimonials {
+	background-color: #f9f9f9;
+	padding: 80px 20px;
+}
+
+#testimonials .testimonial {
+	text-align: center;
+	color: #555;
+}
+
+#features {
+	background-color: #f5f5f5;
+	padding: 80px 20px;
+}
+
+#features ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+#features li {
+	width: 200px;
+	text-align: center;
+	margin: 20px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+#features li:hover {
+	transform: translateY(-5px);
+}
+
+#features li h4 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#features li p {
+	margin-bottom: 20px;
+	color: #555;
+}
+
+#features li img {
+	margin-bottom: 10px;
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 50%;
+}
+
+#features-showcase h2,
+#faq h2,
+#pricing h2 {
+	text-align: center;
+	color: #333;
+}
+
+#call-to-action {
+	text-align: center;
+	padding: 80px 20px;
+	background-color: #f9f9f9;
+}
+
+#call-to-action h2 {
+	margin-bottom: 40px;
+	color: #333;
+}
+
+#call-to-action .cta-buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#call-to-action .cta-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ff5a5f;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+#call-to-action .cta-button:last-child {
+	margin-right: 0;
+}
+
+#call-to-action .cta-button:hover {
+	background-color: #ff787d;
+}
+
+#features-showcase {
+	background-color: #f9f9f9;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+#features-showcase h2 {
+	margin-bottom: 40px;
+	color: #333;
+}
+
+#features-showcase .feature-item {
+	width: 300px;
+	text-align: center;
+	margin: 20px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+#features-showcase .feature-item:hover {
+	transform: translateY(-5px);
+}
+
+#features-showcase .feature-item h3 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#features-showcase .feature-item p {
+	margin-bottom: 20px;
+	color: #555;
+}
+
+#features-showcase .feature-item img {
+	margin-bottom: 10px;
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 50%;
+}
+
+#faq {
+	background-color: #f5f5f5;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+#faq h2 {
+	margin-bottom: 40px;
+	color: #333;
+}
+
+#faq .faq-item {
+	margin-bottom: 30px;
+}
+
+#faq .faq-item h3 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#faq .faq-item p {
+	margin-bottom: 20px;
+	color: #555;
+}
+
+#pricing {
+	background-color: #f9f9f9;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+#pricing h2 {
+	margin-bottom: 40px;
+	color: #333;
+}
+
+#pricing .pricing-table {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#pricing .package {
+	text-align: center;
+	margin: 0 20px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+#pricing .package:hover {
+	transform: translateY(-5px);
+}
+
+#pricing .package h3 {
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#pricing .package .price {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+#pricing .package ul {
+	margin-top: 20px;
+	color: #555;
+}
+
+#pricing .package li {
+	margin-bottom: 10px;
+}
+
+#testimonials {
+	background-color: #f5f5f5;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+#testimonials h2 {
+	margin-bottom: 40px;
+	color: #333;
+}
+
+#testimonials .testimonial {
+	margin-bottom: 40px;
+	border-top: 2px solid #333;
+	padding-top: 30px;
+	color: #555;
+}
+
+#testimonials .testimonial p {
+	margin-bottom: 10px;
+}
+
+#testimonials .testimonial cite {
+	font-style: italic;
+	color: #777;
+}
+
+#contact {
+	background-color: #f9f9f9;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+#contact h2 {
+	margin-bottom: 40px;
+	color: #333;
+}
+
+#contact .contact-info {
+	margin-bottom: 20px;
+	color: #555;
+}
+
+#contact .contact-info i {
+	margin-right: 10px;
+}
+
+#contact .contact-form input[type="text"],
+#contact .contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#contact .contact-form textarea {
+	height: 150px;
+}
+
+#contact .contact-form input[type="submit"] {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ff5a5f;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	border: none;
+	cursor: pointer;
+}
+
+#contact .contact-form input[type="submit"]:hover {
+	background-color: #ff787d;
+}
+
+footer {
+	background-color: #333;
+	padding: 40px 0;
+	color: #fff;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	flex: 1 1 300px;
+	margin-bottom: 20px;
+}
+
+.footer-section h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.footer-section p {
+	margin-bottom: 5px;
+}
+
+.footer-section ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-section ul li {
+	margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+	color: #fff;
+}
+
+.social-media-icons {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.social-media-icons li {
+	margin-right: 10px;
+}
+
+.social-media-icons li a {
+	color: #fff;
+	font-size: 24px;
+}
+
+.footer-bottom {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.footer-bottom p {
+	font-size: 14px;
+}
+
+.fa {
+	font-size: inherit;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+		</style>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#solutions">Solutions</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="home">
+			<h1>Welcome to DrugDistro Company</h1>
+			<h2>Solving Healthcare Distribution Challenges</h2>
+			<a href="#solutions" class="cta-button">Get Started - Explore Our Solutions</a>
+		</section>
+
+		<section id="about">
+			<h2>About Us</h2>
+			<p>At DrugDistro Company, we are committed to revolutionizing the distribution of pharmaceuticals. With our innovative solutions and deep industry expertise, we streamline the supply chain, enhance patient safety, and optimize the pharmaceutical distribution process.</p>
+		</section>
+
+		<section id="solutions">
+			<h2>Our Solutions</h2>
+			<ul>
+				<li>Efficient patient identification</li>
+				<li>Doctor management</li>
+				<li>Pharmaceutical company partnerships</li>
+				<li>Pharmacy contracts</li>
+				<li>Prescription management</li>
+			</ul>
+		</section>
+
+		<section id="testimonials">
+			<h2>Testimonials</h2>
+			<div class="testimonial">
+				<p>"DrugDistro Company has transformed the way we manage our pharmaceutical distribution. Their solutions have significantly improved our supply chain efficiency and patient care."</p>
+				<cite>- Omusala David, CEO of GlaskoRemula Pharmaceuticals</cite>
+			</div>
+			<div class="testimonial">
+				<p>"We highly recommend DrugDistro Company to any pharmacy looking to optimize their operations. Their expertise and support have been invaluable in enhancing our prescription processes."</p>
+				<cite>- Lamech Munani, Chief Pharmacist at Resilasi Pharmacy</cite>
+			</div>
+		</section>
+
+		<section id="features-showcase">
+			<h2>Why Choose DrugDistro Company?</h2>
+			<div class="feature-item">
+				<img src="https://www.tigahealth.com/wp-content/uploads/2021/06/e-pharmacy-1.jpg" alt="Feature 1">
+				<h3>Feature 1: Convenient Prescription Management</h3>
+				<p>Effortlessly manage your prescriptions online, request refills, and track medication history from the comfort of your home.</p>
+			</div>
+			<div class="feature-item">
+				<img src="https://measuredability.com/wp-content/uploads/2021/01/shutterstock_1767744542_retouched-copy.jpg" alt="Feature 2">
+				<h3>Feature 2: Extensive Network of Trusted Doctors</h3>
+				<p>Access a vast network of experienced doctors specializing in various fields to receive personalized and quality healthcare.</p>
+			</div>
+			<div class="feature-item">
+				<img src="https://www.realsimple.com/thmb/EVMDqkfLM2mHVIYl_oRhYIuxXaw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/drug-delivery-services-2000-f93e39e0133e4dfdb3218719aeb219bf.jpg" alt="Feature 3">
+				<h3>Feature 3: Reliable Medication Delivery</h3>
+				<p>Enjoy hassle-free medication delivery to your doorstep, ensuring you never run out of essential medications.</p>
+			</div>
+			<div class="feature-item">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_d9kcDFwHfeiwUESPiLxlgTnXmYRT3lzHOA&usqp=CAU" alt="Feature 4">
+				<h3>Feature 4: Secure and Confidential Services</h3>
+				<p>We prioritize your privacy and ensure secure handling of your personal and medical information throughout the entire process.</p>
+			</div>
+			<div class="feature-item">
+				<img src="https://cdn.etechgs.com/egsmedia/wp-content/uploads/2016/09/1000x1000_how-to-create-an-exceptional-customer-service-experience1-1.png" alt="Feature 5">
+				<h3>Feature 5: Exceptional Customer Support</h3>
+				<p>Receive prompt and friendly customer support to address any concerns, answer questions, and provide guidance whenever needed.</p>
+			</div>
+		</section>
+		<section id="faq">
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-item">
+				<h3>Q1: How do I register as a patient with DrugDistro Company?</h3>
+				<p>A1: To register as a patient, you can visit our website and fill out the patient registration form. Alternatively, you can also visit any of our partner pharmacies and complete the registration process in person.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Q2: Can I choose my preferred doctor?</h3>
+				<p>A2: Yes, as a patient of DrugDistro Company, you have the freedom to choose your preferred doctor. During the registration process, you can indicate your preferred doctor, or you can request a recommendation from our team based on your needs.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Q3: How can I refill my prescription?</h3>
+				<p>A3: Refilling your prescription is easy. Simply log in to your patient account on our website and submit a refill request. Alternatively, you can contact your primary physician or visit any of our partner pharmacies to request a prescription refill.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Q4: Can I transfer my prescription to another pharmacy?</h3>
+				<p>A4: Yes, if you wish to transfer your prescription to another pharmacy, please contact our customer support team or visit the new pharmacy of your choice. They will assist you with the necessary steps to transfer your prescription.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Q5: How can I contact DrugDistro Company for further assistance?</h3>
+				<p>A5: For any further assistance or inquiries, you can reach out to our customer support team via phone at [phone number] or email at [email address]. We are available [business hours] to provide you with the support you need.</p>
+			</div>
+		</section>
+
+
+		<section id="pricing">
+			<h2>Our Pricing</h2>
+			<div class="pricing-table">
+				<div class="package">
+					<h3>Basic Package</h3>
+					<p>Perfect for individuals and small teams.</p>
+					<p class="price">$29/month</p>
+					<a href="#contact" class="cta-button">Get Started</a>
+				</div>
+				<div class="package">
+					<h3>Premium Package</h3>
+					<p>Advanced features for larger organizations.</p>
+					<p class="price">$99/month</p>
+					<a href="#contact" class="cta-button">Get Started</a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Contact Us</h3>
+					<p>Lugulu Avenue, Nairobi, Kenya</p>
+					<p>Email: info@drugdistrocompany.com</p>
+					<p>Phone: +254 473 487 343</p>
+				</div>
+				<div class="footer-section">
+					<h3>Links</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#solutions">Solutions</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h3>Follow Us</h3>
+					<ul class="social-media-icons">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2023 DrugDistro Company. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
